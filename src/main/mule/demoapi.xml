@@ -18,9 +18,9 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	<sub-flow name="demoapiSub_Flow" doc:id="c138c3e8-f51c-4f7b-8617-90213666a54c" >
 		<logger level="INFO" doc:name="Logger" doc:id="fa37fb19-2cc8-4c82-8385-9349d010140e" message='#["subflow"]'/>
 		<flow-ref doc:name="Flow Reference" doc:id="7aa5f50a-c1ce-4f1a-bd6a-3f52495ddad4" name="demoprivateflow"/>
-		<logger level="INFO" doc:name="Logger" doc:id="c0193737-ee82-438f-9803-72a586758d00" message='#["back to subflow"]'/>
 	</sub-flow>
 	<flow name="demoprivateflow" doc:id="1ebd3909-630d-41b1-9f40-43c7a1684593" >
 		<logger level="INFO" doc:name="Logger" doc:id="656e1b64-7f57-44ef-aa00-c21be71b0a1b" message='#["privateflow"]'/>
+		<logger level="INFO" doc:name="Logger" doc:id="7aa21a67-b6f0-4dd2-8b67-5800fff96459" message='#["pf started"]'/>
 	</flow>
 </mule>
